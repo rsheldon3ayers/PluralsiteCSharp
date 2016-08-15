@@ -1,0 +1,1 @@
+Pluralsite tutorial on C# equality.  Part 2 of the C# path.  
