@@ -1,19 +1,20 @@
-using System.Text;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
 
-namespace PluralSite.CSharpEqulity
+
+
+namespace PluralSite.CSharpEquality
 {
-    public class Food
+    class Program
     {
-        private string _name;
-        public string Name { get {return _name; }}
-        public  Food(string name)
+        static void Main(string[] args)
         {
-            this._name = name;
-        }
+            Food banana = new Food("banana");
+            Food chocolate = new Food("chocolate");
 
-        public override string ToString()
-        {
-            return _name;
+            Console.WriteLine(banana.Equals(chocolate));
         }
     }
 }
